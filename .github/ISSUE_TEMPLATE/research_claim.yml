@@ -1,0 +1,22 @@
+name: Research claim
+about: Propose or refine a PostHumanOS research claim
+labels: [research]
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim
+      description: State the claim clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: decomposition
+    attributes:
+      label: Decomposition
+      description: Separate metaphor, hypothesis, mechanism, assumptions, evidence, and validation path.
+    validations:
+      required: true
+  - type: input
+    id: programs
+    attributes:
+      label: Related Programs A-J

@@ -1,0 +1,16 @@
+flowchart LR
+    Intent[Formal Intent]
+    UCC[Capability Contracts / Telemetry]
+    Scheduler[Multi-Currency Planner]
+    Admission[Deterministic Admission Gate]
+    Execution[Bounded Execution]
+    State[Semantic State / Provenance Graph]
+    Audit[Audit / Rollback / Explanation]
+
+    Intent --> Scheduler
+    UCC --> Scheduler
+    Scheduler --> Admission
+    Admission --> Execution
+    Execution --> State
+    State --> Audit
+    Audit --> Scheduler

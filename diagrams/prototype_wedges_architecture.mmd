@@ -1,0 +1,17 @@
+flowchart TB
+    UCC[UCC Parser / Capability Registry]
+    Telemetry[Telemetry Scheduler]
+    Storage[Semantic Storage Overlay]
+    Probe[Sandboxed Probing Emulator]
+    DSL[Restricted Verified DSL]
+    Admission[Shared Admission Engine]
+    Prov[Shared Provenance Graph]
+
+    UCC --> Telemetry
+    UCC --> Probe
+    Telemetry --> Admission
+    Probe --> Admission
+    DSL --> Admission
+    Admission --> Prov
+    Storage --> Prov
+    Telemetry --> Prov

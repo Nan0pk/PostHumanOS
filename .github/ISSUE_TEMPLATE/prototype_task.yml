@@ -1,0 +1,22 @@
+name: Prototype task
+about: Define a bounded engineering task
+labels: [prototype]
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose and non-goals
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Admission, safety, and governance assumptions
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Success metrics, kill criteria, and pivot rules
+    validations:
+      required: true

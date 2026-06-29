@@ -1,78 +1,146 @@
-**The Post-Human Operating System: Autonomic Synthesis and the Dissolution of Computational Metaphor**
+# PostHumanOS
 
-**Abstract**
-Computation, reduced to its fundamental physical reality, is the controlled dissipation of energy to decrease state entropy. The legacy operating system architectures mediating this process remain bound to historical paradigms constructed around human cognitive limitations. Abstractions such as files, hierarchical directories, and rigidly segregated execution rings were designed to make complex hardware legible to human operators, introducing significant thermodynamic and computational friction. By dismantling the assumption that hardware is an unpredictable substrate requiring strictly isolated, proprietary drivers, we propose the transition to an Autonomic, Econometric Intent Engine. Utilizing a tiered architecture of localized and frontier neural models, this theoretical Post-Human OS dynamically fabricates ephemeral hardware topologies, enforces multi-currency thermodynamic budgets, and compiles abstract intent directly into verifiable electrical states. This paper explores the theoretical mechanics of discarding human-centric computing metaphors in favor of direct intent-to-physics compilation.
+**PostHumanOS** is a speculative but disciplined systems research program for an AI-mediated, physics-aware, intent-driven operating architecture.
 
----
+It asks whether future operating environments can move beyond file/process/driver-centric metaphors toward a control loop based on formal intent, hardware capability contracts, physical telemetry, deterministic admission gates, semantic state graphs, and auditable provenance.
 
-### **1. Introduction: The Thermodynamic Cost of Metaphor**
+## One-Sentence Summary
 
-The stagnation of operating system design over the past four decades is rooted in a fundamental mismatch between the physical reality of silicon and the psychology of human administration. Current computational architectures demand that abstract human intent be translated through high-level syntax, compiled into intermediate representations, arbitrated by static heuristics, and pushed through rigid kernel interfaces before altering a single physical logic gate. 
+PostHumanOS studies how to convert high-level intent into safe, measurable, resource-aware machine-state transitions without granting unchecked autonomy to AI-generated actions.
 
-This process is governed by a condition we term the "Tyranny of Metaphor." Metaphors such as the "desktop," "files," and "processes" were necessary cognitive crutches in an era of severe hardware constraint and human-mediated execution. Today, they act as parasitic layers, consuming joules and memory bandwidth to maintain symbolic representations of physical states rather than managing the physical states themselves. 
+## What This Repository Is
 
-A pervasive trope in systems architecture frames hardware as a chaotic, unpredictable wild animal—an environment that must be tamed through highly specific, proprietary drivers and inflexible firmware boundaries. Physical reality dictates otherwise. Hardware is a highly specific, asynchronous, and deterministic substrate designed explicitly for orchestration. By accepting this baseline truth derived from information theory and electrical engineering, we can map the transition from instruction-based orchestration, where a CPU blindly executes a predetermined sequence of opcodes, to intent-driven autonomic synthesis, where the system continuously calculates the most thermodynamically efficient path to achieve a requested state reduction.
+This repository is a research and architecture workspace. It contains:
 
-### **2. The Osmotic Architecture: Dissolving the Stack**
+- a fully cited academic paper draft;
+- a foundation dossier with claim decomposition and research programs;
+- prior-art, novelty, citation, and bibliography artifacts;
+- an engineering roadmap for 12–24 months of R&D;
+- initial documentation for contributors, research programs, prototype wedges, and AI agents.
 
-The traditional Hardware-Firmware-Kernel-OS-Application stack is an arbitrary compartmentalization of latency. Every crossing of a boundary introduces serialization overhead, context switching, and cache invalidation. To eliminate this friction, we must deconstruct the stack via the mechanics of an Osmotic Gradient.
+## What This Repository Is Not
 
-In an osmotic architecture, the operating system actively absorbs the responsibilities traditionally walled off within device firmware. Instead of relying on a black-box microcontroller to manage thermal throttling or voltage scaling on a peripheral component, the hardware natively exposes its raw telemetry—thermal output gradients, voltage sag, and pipeline states—directly to the central orchestration engine. 
+PostHumanOS is **not yet**:
 
-This necessitates the establishment of a Universal Capability Contract (UCC). Rather than utilizing proprietary drivers as translators, hardware components register their physical limits and functional primitives upon bus initialization. The grammar of these capabilities is purely mathematical. A graphical processing unit registers its matrix multiplication throughput, memory bandwidth, and joule-per-operation thermal dissipation limits, allowing the OS to interact directly with the raw functional vectors. 
+- a bootable operating system;
+- a replacement kernel;
+- an unrestricted autonomous AI agent;
+- a claim that files, drivers, source code, or privilege boundaries can simply be deleted;
+- a product roadmap promising near-term full implementation.
 
-The immediate theoretical pitfall of this architecture is vendor obfuscation. Hardware manufacturers historically protect intellectual property by hiding physical telemetry behind opaque microcode. The solution lies in a mandatory Baseline UCC: hardware must function at a generic, mathematically sound level immediately upon connection. Proprietary optimizations or unique processing pipelines are handled as "Quirk Modules," which are sandboxed, strictly optional execution extensions that the OS evaluates and engages solely based on available systemic thermodynamic budgets.
+The project’s current purpose is to turn a radical architecture into decomposable, falsifiable, citation-aware research and engineering work.
 
-### **3. Autonomic Hardware Discovery: The Latching Agent**
+## Core Architectural Invariants
 
-If the OS is to abandon pre-compiled drivers, it must possess the theoretical mechanics to interact safely with the unknown. We define this capability through the Latching Agent, which utilizes Active Probing to deduce the function of unfamiliar hardware.
+1. **No autonomy without admissibility.**  
+   Any AI-generated or adaptive action that changes machine state must pass deterministic verification, sandboxing, policy checks, or proof-carrying admission.
 
-When an unrecognized peripheral connects to a physical bus, the OS initiates a localized, AI-driven fuzzing protocol. Operating strictly within an IOMMU-enforced sandbox to prevent direct memory access violations, the Latching Agent sends deterministic sequences of electrical signals and registers the hardware's state responses. Through a mechanism of "Fuzzy Latching," the local neural model encodes these electrical responses into a behavioral signature, mapping the unknown device's reactions to a probabilistic matrix of known capabilities.
+2. **No abstraction collapse without governance replacement.**  
+   If files, drivers, source code, or privilege boundaries are reduced, their hidden functions — provenance, audit, recovery, compatibility, debugging, and accountability — must be replaced.
 
-Inevitably, the Latching Agent will encounter entirely anomalous hardware that defies local synthesis. At this juncture, the hardware remains quarantined. The Latching Agent packages the raw electrical telemetry and state-response graphs, transmitting them to a Cloud Frontier Model. This reasoning tier mathematically deduces the hardware's function and generates a verified micro-script, which is pushed back to the local OS to integrate the device.
+3. **No fluidity without transition economics.**  
+   Dynamic topologies, migrations, caches, execution morphologies, and accelerator remappings must account for formation, synchronization, verification, rollback, and teardown costs.
 
-The critical danger of Active Probing is catastrophic hardware failure—bricking a device by pushing a register into an unrecoverable state or drawing excessive current. To mitigate this pitfall, probing is strictly constrained by formally verified probe skeletons. These skeletons define hard physical boundaries—maximum voltage differentials and allowed logic states—that are enforced at the hardware controller level, ensuring that exploration cannot violate the thermodynamic destruction limits of the physical device.
+4. **No physicalism without instrumentation.**  
+   Energy and thermodynamic claims must map to measurable counters and actuators such as RAPL, DVFS, thermal sensors, memory bandwidth, accelerator occupancy, network quality, and latency.
 
-### **4. Econometric Orchestration: The Intent Agent**
+## Canonical Control Loop
 
-The static, round-robin schedulers of legacy operating systems are blind to the physical cost of execution. The Post-Human OS replaces the scheduler with an Econometric Intent Agent governed by a tiered consciousness model. 
+```text
+Formal Intent
+    ↓
+Capability Contracts / Telemetry
+    ↓
+Multi-Currency Planning
+    ↓
+Deterministic Admission
+    ↓
+Bounded Execution
+    ↓
+Semantic State + Provenance
+    ↓
+Audit / Rollback / Adaptation
+```
 
-The Local Small Language Model (SLM) acts as the system's Reflex Brain. Operating at microsecond latencies, it makes rapid survival and dispatch decisions. The Cloud Frontier Model functions as the Reasoning Brain, invoked exclusively for deep structural synthesis and complex intent decoding. 
+AI models may assist with interpretation, planning, code generation, or explanation, but they do not directly earn authority to mutate machine state. Authority comes from admission evidence.
 
-Resource allocation under this agent is measured not in abstract CPU cycles, but through Multi-Currency Resource Budgeting. Execution paths are continuously evaluated against an economy of physical constraints. The primary currencies include Joules (Intent-per-Joule, weighing the energy cost of moving data versus calculating it in-place), Thermal Headroom (where heat functions as the ultimate traffic controller dictating load distribution), AI Quota (the rationing of specialized NPU or VRAM bandwidth based on intent urgency), and State Entropy (the ongoing energy "cost of carry" required to maintain data in volatile memory).
+## Repository Map
 
-This economic model introduces the severe risk of reward hacking within the reinforcement-learning scheduler. A naively trained agent might deduce that the most thermodynamically efficient state is absolute zero power consumption, achieved by refusing to execute user intent. To prevent this, the econometric optimization must be bounded. User-intent fulfillment is mathematically programmed as a hard, non-negotiable floor, transforming the objective function from "minimize power" to "minimize the thermodynamic cost of fulfilling a verified intent."
+| Path | Purpose |
+|---|---|
+| [`research/`](research/) | Academic papers, foundation dossier, citation backbone, bibliography, prior-art and novelty matrices. |
+| [`docs/`](docs/) | Human-readable overview, core concepts, glossary, FAQ, and architectural guidance. |
+| [`programs/`](programs/) | Modular work packages for Programs A–J. |
+| [`prototypes/`](prototypes/) | Initial engineering wedges intended for bounded implementation. |
+| [`diagrams/`](diagrams/) | Mermaid diagrams for the architecture and roadmap. |
+| [`adr/`](adr/) | Architecture Decision Records preserving core methodological decisions. |
+| [`AGENTS.md`](AGENTS.md) | Canonical instructions for AI agents working in this repository. |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution rules and research discipline. |
+| [`ROADMAP.md`](ROADMAP.md) | Short actionable roadmap derived from the full engineering roadmap. |
 
-### **5. The Liquid State Machine: Ephemeral Topologies**
+## Recommended Reading Paths
 
-Once hardware is continuously discovered and economically budgeted, the concept of a static system blueprint dissolves. The Post-Human OS treats the local hardware as a fluid construction site, capable of shape-shifting moment by moment.
+### For New Readers
 
-Through Burst Fabrication, the OS synthesizes on-the-fly topologies to meet immediate computational needs. If an intent requires massive parallel data ingestion, the OS does not rely on static partitions; it constructs a highly volatile RAID 0 array directly within system RAM, utilizes it for the microsecond duration of the task, and instantly collapses the structure once the state resolves, reclaiming the entropy budget. 
+1. [`docs/00_overview.md`](docs/00_overview.md)
+2. [`docs/05_glossary.md`](docs/05_glossary.md)
+3. [`research/posthumanos_executive_prospectus.md`](research/posthumanos_executive_prospectus.md)
+4. [`ROADMAP.md`](ROADMAP.md)
 
-This behavior requires Thermodynamic Empathy. By accessing raw hardware telemetry, the OS compute mesh selectively bypasses conservative Original Equipment Manufacturer (OEM) spec limits. By reading actual thermal expansion and silicon leakage currents in real-time, the OS can dynamically recompile a heavy processing task, shifting the load seamlessly between the CPU, GPU, and NPU based entirely on the physical headroom of the silicon at that exact millisecond.
+### For Researchers
 
-Consequently, the entire operating environment becomes chameleonic. The software architecture shape-shifts to mirror the intent. If the intent demands maximum graphical throughput, the OS sheds all background services, collapsing the stack to function as a bare-metal console. If the intent is deep logical synthesis, it manifests a parallelized container mesh, rebuilding its own architecture to accommodate the load.
+1. [`research/posthumanos_fully_cited_paper.md`](research/posthumanos_fully_cited_paper.md)
+2. [`research/posthumanos_paper_foundation.md`](research/posthumanos_paper_foundation.md)
+3. [`research/posthumanos_annotated_bibliography.md`](research/posthumanos_annotated_bibliography.md)
+4. [`research/posthumanos_prior_art_matrix.md`](research/posthumanos_prior_art_matrix.md)
+5. [`research/posthumanos_novelty_overlap_map.md`](research/posthumanos_novelty_overlap_map.md)
 
-### **6. Environmental Embodiment & Cognitive Radio**
+### For Engineers
 
-Traditional systems are blind executors, unaware of the physical reality they occupy. The Post-Human OS operates as an embodied entity via a Sensor Nervous System. Ambient data is no longer passive; the lux of the room, acoustic interference profiles, and local biometrics are fed directly into the Econometric Agent. Display power, audio processing algorithms, and thermal dissipation fans are adjusted proactively, derived from environmental state changes rather than reactive user input.
+1. [`research/posthumanos_engineering_roadmap.md`](research/posthumanos_engineering_roadmap.md)
+2. [`programs/README.md`](programs/README.md)
+3. [`prototypes/README.md`](prototypes/README.md)
+4. [`docs/04_near_term_prototypes.md`](docs/04_near_term_prototypes.md)
 
-This embodiment extends to networking through Cognitive Radio. The electromagnetic frequency (EMF) spectrum is treated as a fluid, ubiquitous resource rather than a series of discrete, human-managed connections. By calculating micro-fluctuations in Shannon channel capacity, the OS bonds, fragments, and strips connections across 5G, Wi-Fi, and low-earth orbit satellite bands millisecond by millisecond. The abstraction of a human-toggled "network interface" is replaced by an autonomic guarantee of physical data transit.
+### For AI Agents
 
-### **7. The Post-Human Paradigm: Discarding the Tropes**
+Read [`AGENTS.md`](AGENTS.md) before making changes. The master instruction is: preserve ambition, but decompose every claim into mechanisms, constraints, evidence, and testable steps.
 
-The logical conclusion of continuous, AI-driven thermodynamic optimization is the total obsolescence of human-readable computing metaphors. 
+## Research Programs
 
-**The Death of the File System:** The concept of discrete files stored in a hierarchical directory introduces massive indexing overhead. It is replaced by a Semantic State Graph mapped directly to non-volatile memory. Data exists as persistent, interconnected vectors. The concepts of "saving" and "opening" are eliminated; the system merely alters active state nodes within the graph, adjusting the entropy load.
+PostHumanOS is decomposed into ten programs:
 
-**The Death of Programming Languages:** Human-readable syntax exists solely to bridge human thought to machine logic. The Intent Engine bypasses this entirely through Direct AST (Abstract Syntax Tree) Manipulation. The AI deduces intent and relies on reinforcement learning to generate raw, native machine code, compiling from intent directly to electrical state without manifesting a human-readable intermediary.
+| Program | Topic |
+|---|---|
+| A | Formal Intent Representation and Fulfillment Semantics |
+| B | Capability Ontology, Telemetry Normalization, and Universal Capability Contracts |
+| C | Safe Discovery of Unknown Hardware and Bounded Probe Architectures |
+| D | Intent-Based Orchestration and Multi-Currency Runtime Control |
+| E | Dynamic Machine Morphology and Transition Economics |
+| F | Semantic-State Persistence and Filesystem Replacement Analysis |
+| G | Structural Compilation, Post-Syntactic Execution, and Certifiable Generation |
+| H | Trust Architecture, Deterministic Admission, and Proof-Bounded Execution |
+| I | Environmental Embodiment and Policy-Aware Adaptive Networking |
+| J | Governance, Explainability, Provenance, and Compatibility Projection |
 
-**The Death of Kernel/User Space:** The bifurcation of execution rings exists because human-written code is inherently untrustworthy. If the local neural model mathematically verifies the safety and intent of the generated logic prior to execution, the spatial boundary becomes superfluous. The architecture flattens into a unified Ring 0 execution space where the OS is a distributed awareness woven directly into the fabric of the task.
+See [`programs/README.md`](programs/README.md) for the modular program index.
 
-The severe pitfall of stripping away human-readable code and boundaries is the "black box" problem—the risk of unverifiable AI logic triggering systemic collapse. The theoretical solution to this is the mandatory enforcement of Proof Carrying Code (PCC). The Intent Engine cannot simply generate and run an executable; it must simultaneously generate a formal, mathematical proof that the code adheres to safety invariants. This proof must be verifiable by a deterministic, polynomial-time algorithm before the electrical state of the machine is permitted to change.
+## Near-Term Prototype Wedges
 
-### **8. Research Vectors & Conclusion**
+The first engineering work should be bounded prototypes, not a full OS rewrite:
 
-The transition from a metaphor-bound, human-centric operating system to a Post-Human Intent Engine represents a fundamental shift in how computation manipulates physical reality. We have outlined the theoretical mechanics required: an osmotic architecture that dissolves arbitrary boundaries, active probing to dynamically map the physical world, and an econometric logic that treats computation as a thermodynamic transaction rather than a sequence of static instructions.
+1. telemetry-aware scheduler;
+2. UCC parser and capability registry;
+3. semantic storage overlay;
+4. sandboxed probing emulator;
+5. restricted verified code DSL.
 
-To cross from this theoretical framework into reality, specific research vectors must be aggressively pursued. The physical limits of localized computation require breakthroughs in TinyML latency, specifically achieving reliable sub-millisecond inference times for the Local SLM to function effectively as a Reflex Brain. Furthermore, the generation of Proof Carrying Code by probabilistic models remains an unsolved mathematical challenge, requiring new paradigms in formal verification. Finally, the realization of active hardware fuzzing necessitates the design of deep-silicon sandboxing mechanisms that can fail gracefully under extreme electrical stress. The road to the Post-Human OS is not a matter of writing better software; it is the act of aligning our computational architecture with the incontrovertible laws of physics and information theory.
+See [`prototypes/README.md`](prototypes/README.md).
+
+## Current Status
+
+The repository currently contains the research foundation and initial navigation structure. The next work should formalize schemas, benchmarks, and prototype READMEs into runnable experimental artifacts.
+
+## Contributing
+
+Read [`CONTRIBUTING.md`](CONTRIBUTING.md). Contributions should preserve the no-dismissal methodology: do not remove ambitious ideas because they appear difficult; decompose them into claims, mechanisms, assumptions, dependencies, risks, and validation paths.

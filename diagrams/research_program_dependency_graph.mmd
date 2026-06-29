@@ -1,0 +1,23 @@
+flowchart TD
+    A[Program A: Formal Intent]
+    B[Program B: UCC / Telemetry]
+    H[Program H: Admission / Trust]
+    D[Program D: Multi-Currency Orchestration]
+    J[Program J: Governance / Provenance]
+    C[Program C: Safe Probing]
+    F[Program F: Semantic Persistence]
+    G[Program G: Certifiable Generation]
+    E[Program E: Dynamic Morphology]
+    I[Program I: Environmental / Networking]
+
+    A --> D
+    B --> D
+    H --> D
+    H --> C
+    H --> G
+    J --> F
+    J --> G
+    D --> E
+    B --> C
+    F --> E
+    D --> I
